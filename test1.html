@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Clave Sol</title>
+    <link rel="icon" href="/resources/clave_Favicon.png" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #72b4c2;
+        }
+
+        .button-container {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            margin-right: 25px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+        }
+
+        
+
+        header {
+            text-align: center;
+            background-color: #72b4c2;
+            margin-top: -25%;
+            width: 100%;
+           
+       
+        }
+
+        button img {
+            width: 100%;
+            height: 100%;
+            border-radius:100px ;
+        }
+
+        hr {
+            width: 100%;
+            border: 2.5px solid #ffffff;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button onclick="logoClick()">
+            <h1 style="color:white; font-size: 50px;font-weight: bold;">𝄞lave Sol</h1>
+        </button>
+        
+    </header>
+    <div class="button-container">
+        <button onclick="selecionarIdioma('PT')">
+            <img src="/resources/bandeira_Portugal_PNG.png" alt="Português" >
+        </button>
+        <button onclick="selecionarIdioma('ENG')">
+            <img src="/resources/bandeira_Ingles_PNG.png" alt="Inglês">
+        </button>
+        <button onclick="selecionarIdioma('FR')">
+            <img src="/resources/bandeira_Franca_PNG.png" alt="Francês">
+        </button>
+        <button onclick="selecionarIdioma('ES')">    
+            <img src="/resources/bandeira_Espanha_PNG.png" alt="Espanhol">
+        </button>
+    </div>
+<div class="redesSociais-container">
+    <button onclick="jmpFacebook()">
+        <img src="/resources/facebookLogo_PNG.png" alt="Facebook">
+    </button>
+    <button onclick="jmpInstagram()">
+        <img src="/resources/InstagramLogo_PNG.png" alt="Instagram">
+</div>
+    
+
+    <script>
+        function selecionarIdioma(idioma) {
+    // Redirecionar para a página correspondente do idioma
+    window.location.href = `http://127.0.0.1:5500/${idioma}/index.html`;
+
+    // Exibir no console o idioma selecionado
+    console.log('Idioma selecionado:', idioma);
+}
+
+function jmpFacebook() {
+    window.location.href = "https://www.facebook.com/clavedesolcafecaxinas/";
+}
+function jmpInstagram() {
+    window.location.href = "https://www.instagram.com/clave_de_sol_cafe/";
+}
+
+
+
+        function logoClick() {
+            // Lógica para lidar com o clique no logo, se necessário
+            console.log('Logo clicado');
+            this.location.reload();
+                }
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+1º - Abrir um terminal em cada lingua 
+Para conseguir aceder a cada página HTML é necessário que todas tenham um servidor aberto , para isso será necesário abrir um em cada
+Sugestão de melhoria : Dependendo de qual lingua abrir apenas servidor nessa lingua
+
+2º - No terminal digitar npx http-server -p (PORTA DO SERVER)
+Isto abrirá uma pagina html em cada lingua 
+iniciara na pagina index.html
