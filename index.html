@@ -1,113 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-    <meta charset="utf-8" />
-    <title>Clave Sol</title>
-    <link rel="icon" href="/resources/clave_Favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clave Sol Snack Bar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita:wght@400;700&display=swap">
+    <link rel="icon" href='IMG_DATA/Hero_IMG/images.jpeg' type="image/x-icon">
     <style>
         body {
+            margin: 0;
+            font-family: 'Sansita', sans-serif;
+        }
+        .container {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            margin: 0;
-            background-color: #72b4c2;
-        }
-
-        .button-container {
-            display: flex;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        button {
-            margin-right: 25px;
-            border: none;
-            background: none;
-            cursor: pointer;
-            width: 100px;
-            height: 100px;
-        }
-
-        
-
-        header {
+            background-image: url('Hero_IDB/ImG_1.png'); /*> Substitua pelo caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
             text-align: center;
-            background-color: #72b4c2;
-            margin-top: -25%;
-            width: 100%;
-           
-       
+            color: white;
+            position: relative;
         }
-
-        button img {
-            width: 100%;
-            height: 100%;
-            border-radius:100px ;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
         }
-
-        hr {
-            width: 100%;
-            border: 2.5px solid #ffffff;
-            margin-top: 2px;
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: Right;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        .buton_title {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+        .title {
+            font-size: 5rem;
+            margin: 0;
+            text-shadow: 
+                -2px -2px 0 #000,  
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                2px 2px 0 #000;
+        }
+        .tagline {
+            font-size: 1.5rem;
+            background-color: rgba(180, 180, 164,1);
+            color: black;
+            display: inline-block;
+            padding: 0.3rem 0.5rem;
+            border-radius: 1rem;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('touchstart', function() {
+                //LINK PARA A PÁGINA DE DESTINO
+                window.location.href = 'https://www.youtube.com/watch?v=t5evKzdeaus&ab_channel=Placard'; // Substitua pelo URL da página de destino
+            });
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <button onclick="logoClick()">
-            <h1 style="color:white; font-size: 50px;font-weight: bold;">𝄞lave Sol</h1>
-        </button>
-        
-    </header>
-    <div class="button-container">
-        <button onclick="selecionarIdioma('PT')">
-            <img src="/resources/bandeira_Portugal_PNG.png" alt="Português" >
-        </button>
-        <button onclick="selecionarIdioma('ENG')">
-            <img src="/resources/bandeira_Ingles_PNG.png" alt="Inglês">
-        </button>
-        <button onclick="selecionarIdioma('FR')">
-            <img src="/resources/bandeira_Franca_PNG.png" alt="Francês">
-        </button>
-        <button onclick="selecionarIdioma('ES')">    
-            <img src="/resources/bandeira_Espanha_PNG.png" alt="Espanhol">
-        </button>
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="nav">
+            <div class="buton_title">MENUS</div>
+        </div> 
+        <div class="content">
+            <div class="title">CLAVE SOL</div>
+            <div class="tagline">Snack Bar | Caxinas</div>
+        </div>
     </div>
-<div class="redesSociais-container">
-    <button onclick="jmpFacebook()">
-        <img src="/resources/facebookLogo_PNG.png" alt="Facebook">
-    </button>
-    <button onclick="jmpInstagram()">
-        <img src="/resources/InstagramLogo_PNG.png" alt="Instagram">
-</div>
-    
-
-    <script>
-        function selecionarIdioma(idioma) {
-    // Redirecionar para a página correspondente do idioma
-    window.location.href = `http://127.0.0.1:5500/${idioma}/index.html`;
-
-    // Exibir no console o idioma selecionado
-    console.log('Idioma selecionado:', idioma);
-}
-
-function jmpFacebook() {
-    window.location.href = "https://www.facebook.com/clavedesolcafecaxinas/";
-}
-function jmpInstagram() {
-    window.location.href = "https://www.instagram.com/clave_de_sol_cafe/";
-}
-
-
-
-        function logoClick() {
-            // Lógica para lidar com o clique no logo, se necessário
-            console.log('Logo clicado');
-            this.location.reload();
-                }
-    </script>
 </body>
 </html>
