@@ -50,8 +50,7 @@
         }
         sub_header .item img {
             height: 80px;
-            width: 80px;
-            object-fit: cover;
+            width: 70px;
             padding: 5px;
 }
         
