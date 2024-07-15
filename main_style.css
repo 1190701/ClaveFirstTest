@@ -3,34 +3,45 @@
             margin: 0;
             font-family: 'Sansita', sans-serif;
             background-color: #f4f4f4;
+            height: 200vh; /* Para testar o scroll */
         }
         header {
             background-color: #72B4C2;
             color: white;
-            padding: 2.3rem;
             padding-bottom: 5rem;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
+            margin: auto;
+            height: 30px;
         }
         header .logo {
             position: absolute;
             top: 5%;
-            right: 47%;
         }
         header .logo img {
         height: 100px;
         }
+        welcoming{
+            position: relative;
+            top: 120px;
+            display: flex;
+            align-items: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to bottom,#70a0af,#70a0af,#70a0af, #325f6cd6,#70a0af, #70a0af,#70a0af,#70a0af ); /* Gradiente de fundo */
+            /* -webkit-background-clip: text; */
+            background-clip: text;
+            color: transparent;
+            justify-content: center;
+        }
         
         sub_header{
-
             color: white;
-            padding: 30px 0;
-            position: fixed;
+            position: relative;
             width: 100%;
             top: 120px;
             display: flex;
