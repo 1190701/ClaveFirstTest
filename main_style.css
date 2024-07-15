@@ -18,6 +18,8 @@
             z-index: 1000;
             margin: auto;
             height: 30px;
+            border-bottom: 3px solid #2954b744 ;
+
         }
         header .logo {
             position: absolute;
@@ -63,7 +65,35 @@
             height: 80px;
             width: 70px;
             padding: 5px;
-}
+        }
+        button1_area{
+            justify-content: center;
+            width: 100%;
+            top: 150px;
+            position: relative;
+            display: flex;
+        }
+        button1_area .button1 {
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            background-color: #72B4C2;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            position: relative; 
+        }
+        
+        .button1:hover {
+            background-color: #5e8b99;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+        }
         
         
 
