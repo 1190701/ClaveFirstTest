@@ -3,7 +3,7 @@
             margin: 0;
             font-family: 'Sansita', sans-serif;
             background-color: #f4f4f4;
-            height: 250vh; /* Para testar o scroll */
+            height: 400vh; /* Para testar o scroll */
         }
         header {
             background-color: #72B4C2;
@@ -187,11 +187,46 @@
                 -2px -3px 0 #4a8896,  
                 2px -3px 0 #4a8896,  
                 -2px 3px 0 #4a8896,  
-                2px 3px 0 #4a8896;
-            
-            
+                2px 3px 0 #4a8896;   
         }
 
+    /* Fim da secção 2 */
+
+    /* Secção 3 */
+    .post-container {
+        text-align: center;
+        position: relative;
+        top: 400px;
+        padding-left: 27px;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .post-image-grid {
+        display: grid;
+        grid-template-columns: repeat(2,160px);
+        gap: 20px;
+    }
+    
+    .post-image-container {
+        border: 3px solid #70a0af;
+        overflow: hidden;
+        height: 150px;
+        width: 151px;
+    }
+    
+    .post-image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        
+    }
     main {
         padding-top: 80px; /* Espaço para o header fixo */
     }
