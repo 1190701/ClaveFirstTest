@@ -207,6 +207,15 @@
         margin-bottom: 20px;
         text-align: left;
     }
+
+    h1 sec4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: left;
+        position: relative;
+        top: 430px;
+    }
     
     .post-image-grid {
         display: grid;
