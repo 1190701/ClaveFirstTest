@@ -236,6 +236,52 @@
         display: block;
         
     }
+    /*Fim da secção 3 */
+    /* Secção 4 */
+    /* Fim da Secção 4 */
+    /* Secção 5 */
+    .footer-content {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        position: relative;
+        top: 450px;
+    }
+
+    .footer-image-container {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    .footer-image-container img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 3px solid black;
+        overflow: hidden;
+    }
+
+    .footer-section-title {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer-address, .footer-hours {
+        font-size: 1em;
+        font-weight: 400;
+        margin-top: 10px;
+        line-height: 1.5em;
+    }
+
+    .footer-hours strong {
+        font-weight: 700;
+    }
+
+    .footer-address {
+        text-decoration: underline;
+    }
     main {
         padding-top: 80px; /* Espaço para o header fixo */
     }
