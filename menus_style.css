@@ -54,14 +54,17 @@
             width: 70px;
             padding: 5px;
         }
+
         type1_container {
             position: relative;
-            top: 160px;
+            top:140px;
             width: 100%;
-            background-color: #85AAAA;
             display: flex;
+            flex-direction: column;
+            background-color: #85AAAA;
+            padding-bottom: 10px;
         }
-        h1{
+        type1_container h1{
             position: relative;
             color: #F9FCFA;
             font-size: 40px;
@@ -72,41 +75,69 @@
             font-style: italic;
             top: -6px;
         }
-        type1_container .type1_container_text_container .text-item {
+
+        type1_container .I2{
             position: relative;
-            top: -12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        type1_container .I2 .text-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            width: 40%;
+        }
+
+        type1_container .I2 .text-container .text-item-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 3%;
+        }
+        type1_container .I2 .text-container .text-price-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: -5%;
+        }
+
+
+        type1_container .I2 .text-container .text-item {
+            position: relative;
             margin-bottom: 13px;
             color: black;
             font-size: 12px;
             font-weight: bold;
-            margin-left: 10px;
         }
-        type1_container .type1_container_text_container .text-price{
+        type1_container .I2 .text-container .text-price{
             position: relative;
             margin-bottom: 13px;
             color: black;
             font-size: 12px;
             font-weight: bold;
-            text-align: left;
-            left: -22px;
-            top: 90px;
         }
-        type1_container .img-container {
-            position: absolute;
-            left: 42%;
-            width: 220px;
-            top: 28%;
+        type1_container .I2 .img-container {
+            width: 50%;
+            padding: 3px;
+            background-color: #85AAAA;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
         }
-        type1_container .img-container img {
+        type1_container .I2 .img-container img {
             width: 100%;
+            align-items: center;
+            justify-content: center;
         }
 
         type2_container {
             position: relative;
-            margin-top: 160px;
             width: 100%;
-            background-color: #F9FCFA;
             display: flex;
+            top: -20px;
         }
         
         type2_container .type2_container_text_container .text-item {
@@ -151,7 +182,197 @@
                 top: -6px;
                 left: 220px;
             }
-        
+
+        batatas_container {
+            position: relative;
+            margin-top: 20px;
+            background-color: #85AAAA;
+            display: block;
+            max-height: 200px;
+        }
+        batatas_container h1{
+            color: #F9FCFA; 
+            text-align: center;
+            position: relative;
+            top: 2px;
+        }
+       
+        batatas_container .batatas_container_text_container .text-item {
+            position: relative;
+            top: -12px;
+            margin-bottom: 14px;
+            color: #F9FCFA;
+            font-weight:bolder;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        batatas_container .batatas_container_text_container .text-price{
+            position: relative;
+            margin-bottom: 13px;
+            color: #F9FCFA;
+            font-size: 20px;
+            top: -129px;
+            margin-right: 10px;
+            margin-left: 320px;
+        }
+
+
+
+        type3_container {
+            position: relative;
+            top:0px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            position: relative;
+            color: black;
+            font-size: 40px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            padding-left: 10px;
+            font-weight: bold;
+            font-style: italic;
+            top: -6px;
+        }
+
+        type3_container .I2{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        type3_container .I2 .text-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            width: 40%;
+        }
+
+        type3_container .I2 .text-container .text-item-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 3%;
+        }
+        type3_container .I2 .text-container .text-price-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: -5%;
+        }
+
+
+        type3_container .I2 .text-container .text-item {
+            position: relative;
+            margin-bottom: 13px;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        type3_container .I2 .text-container .text-price{
+            position: relative;
+            margin-bottom: 13px;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        type3_container .I2 .img-container {
+            width: 50%;
+            padding: 3px;
+            background-color: #85AAAA;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        type3_container .I2 .img-container img {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        type4_container {
+            position: relative;
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #85AAAA;
+            padding-bottom: 10px;
+            
+        }
+        type4_container h1{
+            position: relative;
+            color: #F9FCFA;
+            font-size: 40px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            text-align: right;
+            padding-right: 15px;
+            font-weight: bold;
+            font-style: italic;
+            top: -6px;
+        }
+
+        type4_container .I2{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        type4_container .I2 .text-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            width: 50%;
+        }
+
+        type4_container .I2 .text-container .text-item-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 3%;
+        }
+        type4_container .I2 .text-container .text-price-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: 5%;
+        }
+
+
+        type4_container .I2 .text-container .text-item {
+            position: relative;
+            margin-bottom: 13px;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        type4_container .I2 .text-container .text-price{
+            position: relative;
+            margin-bottom: 13px;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        type4_container .I2 .img-container {
+            width: 50%;
+            padding: 3px;
+            background-color: #85AAAA;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        type4_container .I2 .img-container img {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
         a {
             text-decoration: none;
             color: black;
