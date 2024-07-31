@@ -3,7 +3,7 @@
             margin: 0;
             font-family: 'Sansita', sans-serif;
             background-color: #f4f4f4;
-            height: 400vh; /* Para testar o scroll */
+            
         }
         header {
             background-color: #85AAAA;
@@ -198,6 +198,9 @@
             position: relative;
             top: 2px;
         }
+        batatas_container a{
+            color: #F9FCFA;
+        }
        
         batatas_container .batatas_container_text_container .text-item {
             position: relative;
@@ -216,6 +219,7 @@
             top: -129px;
             margin-right: 10px;
             margin-left: 320px;
+            font-weight: bolder;
         }
 
 
@@ -378,6 +382,147 @@
             justify-content: center;
             margin-bottom: -1.5%;
         }
+
+        kids_container {
+            position: relative;
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #85661eaa;
+            padding-bottom: 10px;
+        }
+
+        kids_container h1{
+            position: relative;
+            color: #F9FCFA;
+            font-size: 40px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 2%;
+            
+        }
+        kids_container .text-container{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+
+        kids_container .text-container .text-item-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 3%;
+        }
+
+        kids_container .text-container .text-price-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: 5%;
+        }
+        
+        kids_container .text-container .text-item-container .text-item {
+            position: relative;
+            margin-bottom: 13px;
+            color: #F9FCFA;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        kids_container .text-container .text-price{
+            position: relative;
+            margin-bottom: 13px;
+            color: #F9FCFA;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        kids_container .text-container .text-item-container .text-price{
+            position: relative;
+            margin-bottom: 13px;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        kids_container a{
+            color: #F9FCFA;
+        }
+        
+        type5_container {
+            position: relative;
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10px;
+        }
+        type5_container h1{
+            position: relative;
+            color: #000000;
+            font-size: 40px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 2%;
+            
+        }
+        
+        type5_container .text-container{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+
+        type5_container .text-container .text-item-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-left: 3%;
+        }
+
+        type5_container .text-container .text-price-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: 3%;
+            position: relative;
+            
+        }
+
+        type5_container .text-container .text-item-container .text-item {
+            position: relative;
+            margin-bottom: 13px;
+            color: black;
+            font-size: 15px;
+            font-weight: bolder;
+            
+        }
+
+        type5_container .text-container .text-price-container  .text-price{
+            position: relative;
+            margin-bottom: 13px;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            margin-right: 2%;
+            font-weight: bold;
+        }
+
+        type5_container .square{
+            position: absolute;
+            background-color: #85AAAA;
+            width: 80%;
+            height:10%;
+            margin-top: 7%;
+            margin-left: 11%;
+            z-index: -1;
+        }
+
         a {
             text-decoration: none;
             color: black;
